@@ -1,4 +1,4 @@
-const V='nrd-68604ad54b',A='nrd-assets';const PRE=["./","game.js?v=a3ac3a4d0d","art-index.js?v=8b69ff7199","manifest.webmanifest","i18n-en.js?v=1f75153996","i18n-ja.js?v=f2ff7094e2","i18n-zh-Hans.js?v=6c5ee5d342","i18n-zh-Hant.js?v=d256640afc"];
+const V='nrd-2883037ac5',A='nrd-assets';const PRE=["./","game.js?v=e28a003e3e","art-index.js?v=8b69ff7199","manifest.webmanifest","i18n-en.js?v=ca4f9d7a12","i18n-ja.js?v=981794b0c1","i18n-zh-Hans.js?v=41a4b1e73b","i18n-zh-Hant.js?v=1c2bca4331"];
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(V).then(c=>c.addAll(PRE).catch(()=>{})));});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k.startsWith('nrd-')&&k!==V&&k!==A).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
 self.addEventListener('fetch',e=>{const r=e.request;if(r.method!=='GET')return;const u=new URL(r.url);if(u.origin!==location.origin)return;
