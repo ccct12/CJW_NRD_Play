@@ -438,7 +438,7 @@
 if(!l){var n=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);l='en';for(var i=0;i<n.length;i++){var x=String(n[i]).toLowerCase();if(x.indexOf('ko')===0){l='ko';break;}if(x.indexOf('ja')===0){l='ja';break;}if(x.indexOf('zh')===0){l=/hant|-tw|-hk|-mo/.test(x)?'zh-Hant':'zh-Hans';break;}if(x.indexOf('en')===0){l='en';break;}}}
 var V={"en":"ca4f9d7a12","ja":"981794b0c1","zh-Hans":"41a4b1e73b","zh-Hant":"1c2bca4331"};if(l!=='ko')document.write('<script src="i18n-'+l+'.js?v='+V[l]+'"><\/script>');})();</script>
 <script src="art-index.js?v=8b69ff7199"></script>
-<script type="module" src="game.js?v=e28a003e3e"></script>
+<script type="module" src="game.js?v=2151324af4"></script>
 <script src="https://ccct12.github.io/CJW_Games/sdk.js" async onload="try{CJWHub.visit('nrd')}catch(e){}"></script>
 <script>if('serviceWorker'in navigator&&(location.protocol==='https:'||location.hostname==='localhost')){var hadSW=!!navigator.serviceWorker.controller;navigator.serviceWorker.addEventListener('controllerchange',function(){if(!hadSW)return;var n=window.__nrd;if(n&&n.g&&n.g.phase==='select'&&!sessionStorage.getItem('nrd.swr')){sessionStorage.setItem('nrd.swr','1');location.reload();}});addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(r){r.update();}).catch(function(){});});}</script>
 </body>
